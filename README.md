@@ -8,6 +8,6 @@ Place script wherever you like, then edit first line to include any networks you
 
 Edit crontab file with `crontab -e` and add line `* * * * * /*full path to script*/bluetooth_check.sh`
 
-If you are running MacOS 12+ you will also need to likely give full disk access to cron by going to Apple Icon > System Preferences > Security and Privacy > Privacy > Full Disk Access > Click the lock to unlock > Click + > Hold Cmd + Shift + G to bring up path navigation and type in /usr/sbin/cron and hit enter > Click Open > Click the Checkbox next to cron to enable
+If you are running MacOS 12+ you will also likely need to give full disk access to cron by going to Apple Icon > System Preferences > Security and Privacy > Privacy > Full Disk Access > Click the lock to unlock > Click + > Hold Cmd + Shift + G to bring up path navigation and type in /usr/sbin/cron and hit enter > Click Open > Click the Checkbox next to cron to enable
 
 This script will check every minute if bluetooth is disabled and will re-enable it if you are on one of the specified wifi networks
