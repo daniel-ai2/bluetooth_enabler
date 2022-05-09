@@ -6,7 +6,7 @@
 
 Place script wherever you like, then edit first line to include any networks you would like to mark as "safe" so that bluetooth remains turned on even when no devices are connected. 
 
-Edit crontab file with `crontab -e` and add line `* * * * * /*full path to script*/bluetooth_check.sh >> /tmp/bt.log 2 >> tmp/bt.log `
+Edit crontab file with `crontab -e` and add line `* * * * * /full path to script/bluetooth_check.sh >> /tmp/bt.log 2 >> tmp/bt.log `
 
 Logs will be written to `/tmp/bt.log`. It'd be more conventional to write to `/var/log`, but then
 we'd have to get permissions right.
