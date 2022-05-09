@@ -6,7 +6,7 @@
 
 Place script wherever you like, then edit first line to include any networks you would like to mark as "safe" so that bluetooth remains turned on even when no devices are connected. 
 
-Edit crontab file with `crontab -e` and add line `* * * * * /*full path to script*/bluetooth_check.sh`
+Edit crontab file with `crontab -e` and add line `* * * * * /full path to script/bluetooth_check.sh`
 
 If you are running MacOS 12+ you will also likely need to give full disk access to cron by going to Apple Icon > System Preferences > Security and Privacy > Privacy > Full Disk Access > Click the lock to unlock > Click + > Hold Cmd + Shift + G to bring up path navigation and type in /usr/sbin/cron and hit enter > Click Open > Click the Checkbox next to cron to enable
 
