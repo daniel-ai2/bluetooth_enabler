@@ -4,7 +4,7 @@
 
 **Requires installation of blueutil via homebrew:** `brew install blueutil`
 
-Place script wherever you like, then edit first line to include any networks you would like to mark as "safe" so that bluetooth remains turned on even when no devices are connected. 
+Place script wherever you like, then edit wordSSID line (line 30) to include any networks you would like to mark as "safe" so that bluetooth remains turned on even when no devices are connected. 
 
 Edit crontab file with `crontab -e` and add line `* * * * * /full path to script/bluetooth_check.sh >> /tmp/bt.log 2 >> tmp/bt.log `
 
